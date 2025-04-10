@@ -1,0 +1,63 @@
+---
+import type { CollectionEntry } from "astro:content";
+import Seo from "../components/Seo.astro";
+import PostHeader from "../components/BlogHeader.astro";
+import BlogFooter from "../components/BlogFooter.astro";
+import FormattedDate from "../components/FormattedDate.astro";
+import siteData from "../data/siteData.json";
+
+type Props = CollectionEntry<"blog">["data"];
+
+const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+
+const post = {
+  title,
+  description,
+  pubDate,
+  updatedDate,
+  image: {
+    src: heroImage,
+    alt: "",
+  },
+};
+---
+ 
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="theme-color" content="var(--primary-color)" />
+    <link rel="icon" href="/favicon.ico" />
+    <title>{siteData.title}</title>
+    <Seo {siteData} {post} />
+  </head>
+
+  <body>
+    <PostHeader />
+    <main>
+      <article class="w-[728px] mx-auto my-8">
+        <header>
+          <div class="text-right text-xs">
+            <FormattedDate date={pubDate} />
+            {
+              updatedDate && (
+                <div class="last-updated-on">
+                  Last updated on <FormattedDate date={updatedDate} />
+                </div>
+              )
+            }
+          </div>
+          <h1 class="font-poppinsbold text-4xl leading-normal">{title}</h1>
+          <p class="font-poppins text-xl text-nine mt-2">{post.description}</p>
+        </header>
+
+        <hr class="my-4 text-nine" />
+
+        <div id="md-style"><slot /></div>
+      </article>
+    </main>
+
+    <BlogFooter />
+  </body>
+</html>

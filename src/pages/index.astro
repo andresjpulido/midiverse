@@ -1,0 +1,249 @@
+---
+import "../styles/global.css";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <body>
+    <!-- ====== Main Content ====== -->
+    <main>
+      <!-- ====== Hero Section ====== -->
+      <section id="hero" class="hero-section">
+        <div class="container">
+          <h1>Shape Your Sound.<br />Control Your Workflow.</h1>
+          <p class="subtitle">
+            MIDIverse Technologies crafts innovative MIDI controllers and tools
+            designed for musicians, producers, and tech creatives.
+          </p>
+          <div class="hero-cta-buttons">
+            <a href="#products" class="cta-button">View Products</a>
+            <a href="#developers" class="cta-button outline">Developer Zone</a>
+          </div>
+          <!-- Podrías añadir un gráfico o imagen de fondo aquí vía CSS -->
+          <!-- O una imagen principal flotante como en el ejemplo -->
+          <!-- <img src="path/to/hero-image.png" alt="MIDIverse Products Showcase" class="hero-image"> -->
+        </div>
+      </section>
+
+      <!-- ====== Products Overview Section ====== -->
+      <section id="products" class="products-overview-section">
+        <div class="container">
+          <h2>Our Innovations</h2>
+          <div class="product-grid">
+            <!-- Producto 1: Controlador MIDI -->
+            <div class="product-card">
+              <!-- Image placeholder -->
+              <div class="product-image-placeholder"></div>
+              <h3>MV-Control X1</h3>
+              <p>
+                Versatile MIDI control surface with responsive pads and endless
+                encoders. Built for performance and production.
+              </p>
+              <a href="#mv-control-x1-details" class="learn-more-link"
+                >Learn More →</a
+              >
+              <!-- Podrías enlazar a una sección detallada o página separada -->
+            </div>
+
+            <!-- Producto 2: MIDIKeyLinker -->
+            <div class="product-card highlight-card">
+              <!-- Añadida clase para destacar -->
+              <!-- Image placeholder -->
+              <div class="product-image-placeholder"></div>
+              <h3>MIDIKeyLinker</h3>
+              <p>
+                Bridge the gap between MIDI and your OS. Trigger apps, scripts,
+                and shortcuts with your MIDI gear.
+              </p>
+              <a href="#midikeylinker" class="learn-more-link">Learn More →</a>
+            </div>
+
+            <!-- Podrías añadir más tarjetas de productos o servicios aquí -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ====== MIDIKeyLinker Detail Section ====== -->
+      <section id="midikeylinker" class="feature-section">
+        <div class="container feature-container">
+          <div class="feature-text">
+            <h2>Unlock Your Workflow: MIDIKeyLinker</h2>
+            <p>
+              Stop clicking, start performing your workflow. MIDIKeyLinker
+              translates incoming MIDI messages (Notes, CCs, Program Changes)
+              into customizable actions on your computer. Launch applications,
+              run scripts, trigger keyboard shortcuts, control OBS, and much
+              more – all from your favorite MIDI device.
+            </p>
+            <ul>
+              <li>
+                <span class="highlight-icon">✓</span> Map MIDI to Keystrokes & Shortcuts
+              </li>
+              <li>
+                <span class="highlight-icon">✓</span> Trigger Executable Files &
+                Scripts
+              </li>
+              <li>
+                <span class="highlight-icon">✓</span> Intuitive Configuration Software
+                (Win/Mac/Linux)
+              </li>
+              <li>
+                <span class="highlight-icon">✓</span> Compact, Desk-Friendly Footprint
+              </li>
+            </ul>
+            <a href="#" class="cta-button">View Setup Guide</a>
+            <!-- Link to documentation -->
+          </div>
+          <div class="feature-image">
+            <!-- Image placeholder for MIDIKeyLinker -->
+            <img
+              src="placeholder-midikeylinker.png"
+              alt="MIDIKeyLinker Device"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- ====== MV-Control X1 Detail Section (Ejemplo) ====== -->
+      <section id="mv-control-x1-details" class="feature-section reversed">
+        <!-- reversed para alternar layout -->
+        <div class="container feature-container">
+          <div class="feature-text">
+            <h2>Express Yourself: MV-Control X1</h2>
+            <p>
+              The MV-Control X1 is designed for the modern musician. Featuring
+              highly responsive pads and smooth endless encoders in a rugged,
+              sleek chassis, it provides intuitive tactile control over your
+              digital audio workstation, virtual instruments, and effects.
+            </p>
+            <ul>
+              <li>
+                <span class="highlight-icon">✓</span> 16 Velocity-Sensitive Pads
+              </li>
+              <li>
+                <span class="highlight-icon">✓</span> 8 Endless Rotary Encoders
+              </li>
+              <li>
+                <span class="highlight-icon">✓</span> Compact & Durable Design
+              </li>
+              <li>
+                <span class="highlight-icon">✓</span> USB-C Powered and Connected
+              </li>
+            </ul>
+            <a href="#" class="cta-button outline">View Full Specs</a>
+            <!-- Link to specs -->
+          </div>
+          <div class="feature-image">
+            <!-- Image placeholder for MV-Control X1 -->
+            <img
+              src="placeholder-mvcontrolx1.png"
+              alt="MV-Control X1 MIDI Controller"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- ====== Developers Section ====== -->
+      <section id="developers" class="developers-section dark-section">
+        <!-- dark-section para posible fondo diferente -->
+        <div class="container">
+          <h2>Developer Zone</h2>
+          <p>
+            Explore our resources, documentation, and tools to integrate and
+            extend the MIDIverse ecosystem. We believe in open possibilities.
+          </p>
+          <!-- Aquí podrías añadir enlaces específicos a documentación, API, GitHub, etc. -->
+          <div class="dev-links">
+            <a href="#">MIDIKeyLinker Scripting</a> |
+            <a href="#">Hardware MIDI Specs</a> |
+            <a href="#">Community Forum</a>
+          </div>
+          <a href="/developers.html" class="cta-button"
+            >Visit Developer Portal</a
+          >
+          <!-- Link a página de desarrolladores si existe -->
+        </div>
+      </section>
+
+      <!-- ====== Services Section ====== -->
+      <section id="services" class="services-section">
+        <div class="container">
+          <h2>Custom MIDI Solutions</h2>
+          <p>
+            Need something unique? From bespoke controller layouts to
+            specialized firmware, we offer custom hardware and software
+            development services tailored to your needs.
+          </p>
+          <a href="#contact" class="cta-button outline">Request a Quote</a>
+        </div>
+      </section>
+
+      <!-- ====== Contact Section ====== -->
+      <section id="contact" class="contact-section">
+        <div class="container">
+          <h2>Get In Touch</h2>
+          <p>
+            Have questions or interested in a custom project? Fill out the form
+            below.
+          </p>
+          <form action="process_form.php" method="POST" class="contact-form">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject:</label>
+              <select id="subject" name="subject" required>
+                <option value="">-- Please Select --</option>
+                <option value="General Inquiry">General Inquiry</option>
+                <option value="Product Support - MV-Control X1"
+                  >Product Support - MV-Control X1</option
+                >
+                <option value="Product Support - MIDIKeyLinker"
+                  >Product Support - MIDIKeyLinker</option
+                >
+                <option value="Custom Project Inquiry"
+                  >Custom Project Inquiry</option
+                >
+                <option value="Developer Question">Developer Question</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="5" required
+              ></textarea>
+            </div>
+            <div>
+              <button type="submit" class="cta-button">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- ====== Footer ====== -->
+    <footer class="site-footer">
+      <div class="container footer-container">
+        <p>
+          © <span id="current-year"></span> MIDIverse Technologies. All Rights Reserved.
+        </p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+          <!-- Añadir enlaces a redes sociales aquí si es necesario -->
+        </div>
+      </div>
+    </footer>
+
+    <!-- Script para actualizar el año (opcional) -->
+    <script>
+      document.getElementById("current-year").textContent =
+        new Date().getFullYear();
+    </script>
+    <!-- Aquí podrías enlazar archivos JavaScript para interactividad adicional -->
+  </body>
+</Layout>
