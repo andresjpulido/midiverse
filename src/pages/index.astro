@@ -1,5 +1,4 @@
 ---
-import "../styles/global.css";
 import Layout from "../layouts/Layout.astro";
 ---
 
@@ -7,6 +6,8 @@ import Layout from "../layouts/Layout.astro";
   <body>
     <!-- ====== Main Content ====== -->
     <main>
+      <video src="https://videos.pexels.com/video-files/13283810/13283810-uhd_2560_1440_25fps.mp4" muted loop autoplay></video>
+      <div class="overlay"></div>
       <!-- ====== Hero Section ====== -->
       <section id="hero" class="hero-section">
         <div class="container">
@@ -15,7 +16,7 @@ import Layout from "../layouts/Layout.astro";
             MIDIverse Technologies crafts innovative MIDI controllers and tools
             designed for musicians, producers, and tech creatives.
           </p>
-          <div class="hero-cta-buttons">
+          <div class="hero-cta-buttons flex justify-center">
             <a href="#products" class="cta-button">View Products</a>
             <a href="#developers" class="cta-button outline">Developer Zone</a>
           </div>
@@ -226,18 +227,8 @@ import Layout from "../layouts/Layout.astro";
       </section>
     </main>
 
-    <!-- ====== Footer ====== -->
-    <footer class="site-footer">
-      <div class="container footer-container">
-        <p>
-          © <span id="current-year"></span> MIDIverse Technologies. All Rights Reserved.
-        </p>
-        <div class="footer-links">
-          <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
-          <!-- Añadir enlaces a redes sociales aquí si es necesario -->
-        </div>
-      </div>
-    </footer>
+    
+    
 
     <!-- Script para actualizar el año (opcional) -->
     <script>

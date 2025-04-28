@@ -1,7 +1,9 @@
 ---
+import "../styles/global.css";
 import Seo from "../components/Seo.astro";
 import Header from "../components/header.astro";
 import siteData from "../data/siteData.json";
+import Footer from "../components/footer.astro";
 ---
 
 <!doctype html>
@@ -37,5 +39,6 @@ import siteData from "../data/siteData.json";
   <body class="f">
     <Header />
     <slot />
+    <Footer />
   </body>
 </html>
