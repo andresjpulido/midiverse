@@ -24,19 +24,18 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.8; 
+    opacity: 0.8;
   }
 
-  .overlay
-{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #3f4345;
-  mix-blend-mode: overlay;
-}
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #3f4345;
+    mix-blend-mode: overlay;
+  }
   .btn-primary {
     border-radius: calc(infinity * 1px);
     background-color: var(--color-violet-500);
@@ -51,9 +50,27 @@
       }
     }
   }
+
+  .h1 {
+    @apply text-5xl mt-6;
+  }
+
+  .h2 {
+    @apply text-4xl text-center mt-16;
+  }
 }
 
 @layer base {
+  /* Línea sutil debajo de títulos h2 (opcional) */
+  .line::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--primary-accent);
+    margin: 10px auto 0;
+  }
+
   .cta-button {
     display: inline-block;
     padding: 10px 25px;
@@ -127,32 +144,7 @@
     margin-bottom: 1rem;
     line-height: 1.2;
   }
-
-  h1 {
-    font-size: 3rem; /* Ajustar según sea necesario */
-  }
-
-  h2 {
-    font-size: 2.2rem; /* Ajustar según sea necesario */
-    text-align: center;
-    margin-bottom: 2.5rem;
-    position: relative;
-  }
-
-  /* Línea sutil debajo de títulos h2 (opcional) */
-  h2::after {
-    content: "";
-    display: block;
-    width: 60px;
-    height: 3px;
-    background-color: var(--primary-accent);
-    margin: 10px auto 0;
-  }
-
-  h3 {
-    font-size: 1.5rem;
-  }
-
+ 
   p {
     margin-bottom: 1rem;
     color: var(--secondary-text);
@@ -244,7 +236,7 @@
     @apply h-screen;
   }
 
-  .v{
+  .v {
     /* Considera añadir una imagen/gradiente de fondo sutil aquí vía background-image */
     background: linear-gradient(rgba(26, 26, 26, 0.8), rgba(26, 26, 26, 1)),
       url("/public/midiverselogo.png"); /* Ejemplo */

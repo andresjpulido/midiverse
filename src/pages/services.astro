@@ -6,9 +6,11 @@ import Layout from "../layouts/Layout.astro";
 <Layout>
   <section id="about" class="about-section dark-section">
     <div class="container">
-      <h1>Services</h1>
-      <h2>🛠️ Custom MIDI Controllers</h2>
-      <h3>Tailored to your music. Built to your vision.</h3>
+      <h1 class="h1">Services</h1>
+      <h2 class="h2">🛠️ Custom MIDI Controllers</h2>
+      <h3 class="text-xl text-center">
+        Tailored to your music. Built to your vision.
+      </h3>
       <p>
         At MIDIverse Technologies, we believe every artist and developer
         deserves tools that match their unique workflow and style. That’s why we
@@ -18,100 +20,200 @@ import Layout from "../layouts/Layout.astro";
         own branded device.
       </p>
 
-      <h2>🎯 Our Process</h2>
-      <h3>From idea to instrument — together.</h3>
-      <p>
+      <h2 class="h2">🎯 Our Process</h2>
+      <h3 class="text-xl text-center">From idea to instrument — together.</h3>
+      <p class="text-left">
         We collaborate with you every step of the way to create a MIDI
         controller that not only looks great, but feels right and performs
         flawlessly. Here’s how we make it happen:
       </p>
 
-      <h4>1. Discovery & Requirements</h4>
-      <p>
-        We start by getting to know you — your goals, your creative setup, and
-        your technical needs. Whether you have a rough sketch, a detailed
-        blueprint, or just a dream, we’ll help you define the features and form
-        factor of your perfect controller.
-      </p>
-      <p>What we cover:</p>
-      <ul>
-        <li>Desired layout (pads, knobs, faders, encoders, etc.)</li>
-        <li>
-          Use cases (live performance, studio, DAW control, installations)
+      <ul class="grid grid-cols-1 md:grid-cols-2 gap-8 my-12 md:mx-4">
+        <li
+          class="bg-[var(--dark-bg)] rounded-lg p-4 md:p-8 flex flex-col gap-4 justify-center"
+        >
+        
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="w-1/4 fill-[#adff2f] mx-auto mb-8"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M7.502 6h7.128A3.375 3.375 0 0 1 18 9.375v9.375a3 3 0 0 0 3-3V6.108c0-1.505-1.125-2.811-2.664-2.94a48.972 48.972 0 0 0-.673-.05A3 3 0 0 0 15 1.5h-1.5a3 3 0 0 0-2.663 1.618c-.225.015-.45.032-.673.05C8.662 3.295 7.554 4.542 7.502 6ZM13.5 3A1.5 1.5 0 0 0 12 4.5h4.5A1.5 1.5 0 0 0 15 3h-1.5Z"
+              clip-rule="evenodd"></path>
+            <path
+              fill-rule="evenodd"
+              d="M3 9.375C3 8.339 3.84 7.5 4.875 7.5h9.75c1.036 0 1.875.84 1.875 1.875v11.25c0 1.035-.84 1.875-1.875 1.875h-9.75A1.875 1.875 0 0 1 3 20.625V9.375ZM6 12a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75H6.75a.75.75 0 0 1-.75-.75V12Zm2.25 0a.75.75 0 0 1 .75-.75h3.75a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1-.75-.75ZM6 15a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75H6.75a.75.75 0 0 1-.75-.75V15Zm2.25 0a.75.75 0 0 1 .75-.75h3.75a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1-.75-.75ZM6 18a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75H6.75a.75.75 0 0 1-.75-.75V18Zm2.25 0a.75.75 0 0 1 .75-.75h3.75a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1-.75-.75Z"
+              clip-rule="evenodd"></path>
+          </svg>
+
+          <section>
+            <h4>1. Discovery & Requirements</h4>
+            <p class="text-left">
+              We start by getting to know you — your goals, your creative setup,
+              and your technical needs. Whether you have a rough sketch, a
+              detailed blueprint, or just a dream, we’ll help you define the
+              features and form factor of your perfect controller.
+            </p>
+            <p class="text-left">What we cover:</p>
+            <ul
+              class="list-disc list-inside mb-6 text-sm text-[var(--secondary-text)]"
+            >
+              <li>Desired layout (pads, knobs, faders, encoders, etc.)</li>
+              <li>
+                Use cases (live performance, studio, DAW control, installations)
+              </li>
+              <li>Connectivity needs (USB, MIDI DIN, Bluetooth, CV/Gate)</li>
+              <li>Aesthetic preferences (materials, lighting, branding)</li>
+            </ul>
+          </section>
         </li>
-        <li>Connectivity needs (USB, MIDI DIN, Bluetooth, CV/Gate)</li>
-        <li>Aesthetic preferences (materials, lighting, branding)</li>
-      </ul>
 
-      <h4>2. Design & Prototyping</h4>
-      <p>
-        Our design team takes your vision and turns it into reality with 3D
-        models, interface mockups, and interactive diagrams. You’ll get to
-        review each iteration and suggest adjustments before we move to
-        production.
-      </p>
-      <p>Deliverables:</p>
-      <ul>
-        <li>Physical layout mockups</li>
-        <li>UI/UX prototypes (if needed)</li>
-        <li>Technical schematics</li>
-        <li>Component selection & cost breakdown</li>
-      </ul>
+        <li
+          class="bg-[var(--dark-bg)] rounded-lg p-4 md:p-8 flex flex-col gap-4 justify-center"
+        >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-1/4 fill-[#adff2f] mx-auto mb-8">
+          <path d="M16.5 7.5h-9v9h9v-9Z" />
+          <path fill-rule="evenodd" d="M8.25 2.25A.75.75 0 0 1 9 3v.75h2.25V3a.75.75 0 0 1 1.5 0v.75H15V3a.75.75 0 0 1 1.5 0v.75h.75a3 3 0 0 1 3 3v.75H21A.75.75 0 0 1 21 9h-.75v2.25H21a.75.75 0 0 1 0 1.5h-.75V15H21a.75.75 0 0 1 0 1.5h-.75v.75a3 3 0 0 1-3 3h-.75V21a.75.75 0 0 1-1.5 0v-.75h-2.25V21a.75.75 0 0 1-1.5 0v-.75H9V21a.75.75 0 0 1-1.5 0v-.75h-.75a3 3 0 0 1-3-3v-.75H3A.75.75 0 0 1 3 15h.75v-2.25H3a.75.75 0 0 1 0-1.5h.75V9H3a.75.75 0 0 1 0-1.5h.75v-.75a3 3 0 0 1 3-3h.75V3a.75.75 0 0 1 .75-.75ZM6 6.75A.75.75 0 0 1 6.75 6h10.5a.75.75 0 0 1 .75.75v10.5a.75.75 0 0 1-.75.75H6.75a.75.75 0 0 1-.75-.75V6.75Z" clip-rule="evenodd" />
+        </svg>
+        
+          <section>
+            <h4>2. Design & Prototyping</h4>
+            <p class="text-left">
+              Our design team takes your vision and turns it into reality with
+              3D models, interface mockups, and interactive diagrams. You’ll get
+              to review each iteration and suggest adjustments before we move to
+              production.
+            </p>
+            <p class="text-left">Deliverables:</p>
+            <ul
+              class="list-disc list-inside mb-6 text-sm text-[var(--secondary-text)]"
+            >
+              <li>Physical layout mockups</li>
+              <li>UI/UX prototypes (if needed)</li>
+              <li>Technical schematics</li>
+              <li>Component selection & cost breakdown</li>
+            </ul>
+          </section>
+        </li>
 
-      <h4>3. Manufacturing & Assembly</h4>
-      <p>
-        Once you approve the design, we get to work. Our in-house team handles
-        circuit board production, housing fabrication, and hand-assembly. We use
-        premium materials and rigorously selected components to ensure the
-        highest quality.
-      </p>
-      <p>Includes:</p>
-      <ul>
-        <li>PCB fabrication & soldering</li>
-        <li>Case machining or 3D printing</li>
-        <li>Assembly & branding</li>
-        <li>Firmware development (if required)</li>
-      </ul>
+        <li
+          class="bg-[var(--dark-bg)] rounded-lg p-4 md:p-8 flex flex-col gap-4 justify-center"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="w-1/4 fill-[#adff2f] mx-auto mb-8"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M11.828 2.25c-.916 0-1.699.663-1.85 1.567l-.091.549a.798.798 0 0 1-.517.608 7.45 7.45 0 0 0-.478.198.798.798 0 0 1-.796-.064l-.453-.324a1.875 1.875 0 0 0-2.416.2l-.243.243a1.875 1.875 0 0 0-.2 2.416l.324.453a.798.798 0 0 1 .064.796 7.448 7.448 0 0 0-.198.478.798.798 0 0 1-.608.517l-.55.092a1.875 1.875 0 0 0-1.566 1.849v.344c0 .916.663 1.699 1.567 1.85l.549.091c.281.047.508.25.608.517.06.162.127.321.198.478a.798.798 0 0 1-.064.796l-.324.453a1.875 1.875 0 0 0 .2 2.416l.243.243c.648.648 1.67.733 2.416.2l.453-.324a.798.798 0 0 1 .796-.064c.157.071.316.137.478.198.267.1.47.327.517.608l.092.55c.15.903.932 1.566 1.849 1.566h.344c.916 0 1.699-.663 1.85-1.567l.091-.549a.798.798 0 0 1 .517-.608 7.52 7.52 0 0 0 .478-.198.798.798 0 0 1 .796.064l.453.324a1.875 1.875 0 0 0 2.416-.2l.243-.243c.648-.648.733-1.67.2-2.416l-.324-.453a.798.798 0 0 1-.064-.796c.071-.157.137-.316.198-.478.1-.267.327-.47.608-.517l.55-.091a1.875 1.875 0 0 0 1.566-1.85v-.344c0-.916-.663-1.699-1.567-1.85l-.549-.091a.798.798 0 0 1-.608-.517 7.507 7.507 0 0 0-.198-.478.798.798 0 0 1 .064-.796l.324-.453a1.875 1.875 0 0 0-.2-2.416l-.243-.243a1.875 1.875 0 0 0-2.416-.2l-.453.324a.798.798 0 0 1-.796.064 7.462 7.462 0 0 0-.478-.198.798.798 0 0 1-.517-.608l-.091-.55a1.875 1.875 0 0 0-1.85-1.566h-.344ZM12 15.75a3.75 3.75 0 1 0 0-7.5 3.75 3.75 0 0 0 0 7.5Z"
+              clip-rule="evenodd"></path>
+          </svg>
+          <section>
+            <h4>3. Manufacturing & Assembly</h4>
+            <p class="text-left">
+              Once you approve the design, we get to work. Our in-house team
+              handles circuit board production, housing fabrication, and
+              hand-assembly. We use premium materials and rigorously selected
+              components to ensure the highest quality.
+            </p>
+            <p class="text-left">Includes:</p>
+            <ul
+              class="list-disc list-inside mb-6 text-sm text-[var(--secondary-text)]"
+            >
+              <li>PCB fabrication & soldering</li>
+              <li>Case machining or 3D printing</li>
+              <li>Assembly & branding</li>
+              <li>Firmware development (if required)</li>
+            </ul>
+          </section>
+        </li>
 
-      <h4>4. Testing & Quality Control</h4>
-      <p>
-        Before shipping, each unit goes through a full functionality test,
-        stress test, and DAW compatibility check. We fine-tune responsiveness,
-        latency, and firmware stability to guarantee it works as expected — out
-        of the box.
-      </p>
-      <p>What we test:</p>
-      <ul>
-        <li>MIDI signal integrity</li>
-        <li>Button/knob response</li>
-        <li>Connectivity & protocol performance</li>
-        <li>DAW integration (Ableton, Logic, FL Studio, etc.)</li>
-      </ul>
+        <li
+          class="bg-[var(--dark-bg)] rounded-lg p-4 md:p-8 flex flex-col gap-4 justify-center"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="w-1/4 fill-[#adff2f] mx-auto mb-8"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.25 5.25a3 3 0 0 1 3-3h13.5a3 3 0 0 1 3 3V15a3 3 0 0 1-3 3h-3v.257c0 .597.237 1.17.659 1.591l.621.622a.75.75 0 0 1-.53 1.28h-9a.75.75 0 0 1-.53-1.28l.621-.622a2.25 2.25 0 0 0 .659-1.59V18h-3a3 3 0 0 1-3-3V5.25Zm1.5 0v7.5a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5v-7.5a1.5 1.5 0 0 0-1.5-1.5H5.25a1.5 1.5 0 0 0-1.5 1.5Z"
+              clip-rule="evenodd"></path>
+          </svg>
 
-      <h4>5. Delivery & Support</h4>
-      <p>
-        We package your controller securely and ship it worldwide, with full
-        documentation and optional onboarding assistance. You’ll also get access
-        to our support team for updates, repairs, and custom firmware tweaks.
-      </p>
-      <p>Included:</p>
-      <ul>
-        <li>User manual</li>
-        <li>Configuration guide</li>
-        <li>Optional remote setup session</li>
-        <li>6–12 month support window</li>
-      </ul>
+          <section>
+            <h4>4. Testing & Quality Control</h4>
+            <p class="text-left">
+              Before shipping, each unit goes through a full functionality test,
+              stress test, and DAW compatibility check. We fine-tune
+              responsiveness, latency, and firmware stability to guarantee it
+              works as expected — out of the box.
+            </p>
+            <p class="text-left">What we test:</p>
+            <ul
+              class="list-disc list-inside mb-6 text-sm text-[var(--secondary-text)]"
+            >
+              <li>MIDI signal integrity</li>
+              <li>Button/knob response</li>
+              <li>Connectivity & protocol performance</li>
+              <li>DAW integration (Ableton, Logic, FL Studio, etc.)</li>
+            </ul>
+          </section>
+        </li>
 
-      <h3>💬 Let’s Build Yours</h3>
-      <h4>Ready to start your custom MIDI project?</h4>
-      <p>
-        Reach out to us at custom@midiverse.dev and we’ll schedule a
-        consultation to explore your ideas and send you a free project proposal.
-      </p>
-      <p>
-        🎹 Whether you’re a solo artist, a production team, or a tech company,
-        we’re here to build the tools that bring your music to life.
-      </p>
+        <li
+          class="bg-[var(--dark-bg)] rounded-lg p-4 md:p-8 flex flex-col gap-4 justify-center"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="w-1/4 fill-[#adff2f] mx-auto mb-8"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM8.547 4.505a8.25 8.25 0 1 0 11.672 8.214l-.46-.46a2.252 2.252 0 0 1-.422-.586l-1.08-2.16a.414.414 0 0 0-.663-.107.827.827 0 0 1-.812.21l-1.273-.363a.89.89 0 0 0-.738 1.595l.587.39c.59.395.674 1.23.172 1.732l-.2.2c-.211.212-.33.498-.33.796v.41c0 .409-.11.809-.32 1.158l-1.315 2.191a2.11 2.11 0 0 1-1.81 1.025 1.055 1.055 0 0 1-1.055-1.055v-1.172c0-.92-.56-1.747-1.414-2.089l-.654-.261a2.25 2.25 0 0 1-1.384-2.46l.007-.042a2.25 2.25 0 0 1 .29-.787l.09-.15a2.25 2.25 0 0 1 2.37-1.048l1.178.236a1.125 1.125 0 0 0 1.302-.795l.208-.73a1.125 1.125 0 0 0-.578-1.315l-.665-.332-.091.091a2.25 2.25 0 0 1-1.591.659h-.18c-.249 0-.487.1-.662.274a.931.931 0 0 1-1.458-1.137l1.279-2.132Z"
+              clip-rule="evenodd"></path>
+          </svg>
+
+          <section>
+            <h4>5. Delivery & Support</h4>
+            <p class="text-left">
+              We package your controller securely and ship it worldwide, with
+              full documentation and optional onboarding assistance. You’ll also
+              get access to our support team for updates, repairs, and custom
+              firmware tweaks.
+            </p>
+            <p class="text-left">Included:</p>
+            <ul
+              class="list-disc list-inside mb-6 text-sm text-[var(--secondary-text)]"
+            >
+              <li>User manual</li>
+              <li>Configuration guide</li>
+              <li>Optional remote setup session</li>
+              <li>6–12 month support window</li>
+            </ul>
+          </section>
+        </li>
+      </ul>
     </div>
+
+    <h3>💬 Let’s Build Yours</h3>
+    <h4>Ready to start your custom MIDI project?</h4>
+    <p>
+      Reach out to us at custom@midiverse.dev and we’ll schedule a consultation
+      to explore your ideas and send you a free project proposal.
+    </p>
+    <p>
+      🎹 Whether you’re a solo artist, a production team, or a tech company,
+      we’re here to build the tools that bring your music to life.
+    </p>
   </section>
 </Layout>
